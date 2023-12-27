@@ -53,6 +53,47 @@ header {
 }
 
 .phone,
+@media (max-width: 640px) {
+    :root {
+        font-size: 10px;
+    }
+
+    /* Hide some elements on small screens */
+    .has, .right {
+        display: none;
+    }
+
+    /* Add a mobile navigation icon or menu */
+    .lines {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-left: 33rem;
+    }
+
+    .lines p {
+        width: 7rem;
+        height: 12px;
+        background-color: #ef7998;
+    }
+
+    header {
+        width: 70rem;
+        height: max-content;
+        padding-top: 2rem;
+    }
+
+    header img {
+        width: 12rem;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+}
+
+/* Add other responsive styles as needed */
 .cart {
     display: flex;
     gap: 1rem;
